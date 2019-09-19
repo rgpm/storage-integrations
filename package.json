@@ -1,0 +1,12 @@
+{
+  "name": "storage-integrations",
+  "version": "1.0.0",
+  "description": "Storage Integrations for RGPM Core",
+  "main": "index.js",
+  "repository": "git@github.com:rgpm/storage-integrations.git",
+  "author": "Owen Parkins <oparkins@gmail.com>",
+  "license": "LGPL-3.0-only",
+  "dependencies": {
+    "jest": "^24.9.0"
+  }
+}
