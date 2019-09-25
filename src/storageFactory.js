@@ -7,14 +7,15 @@ class StorageFactory {
     static getLocalStorage() {
         /* Browser */
         try {
+            /* Use crypto to reliability determine if browser or not*/
             if (crypto.subtle !== undefined) {
                 const BrowserStorage = require("./browserStorage");
-            return new BrowserStorage();
+                return new BrowserStorage();
             }
         } catch (e) { }
 
         /* Node */
-        return null;
+        throw new NotImplementedError("Local Storage for NodeJS not ready");
     }
 }
 

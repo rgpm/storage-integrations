@@ -11,9 +11,10 @@ describe("StorageFactory", () => {
 describe("StorageFactory methods", () => {
 
     describe("getLocalStorage method", () => {
-        it("should return null", () => {
+        it("should throw error", () => {
             const StorageFactory = require("../../src/storageFactory");
-            expect(StorageFactory.getLocalStorage()).toBeNull();
+            const NotImplementedError = require("../../src/notImplementedError");
+            expect(StorageFactory.getLocalStorage).toThrow(NotImplementedError);
         });
     });
 });
