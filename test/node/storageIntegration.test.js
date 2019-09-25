@@ -90,4 +90,14 @@ describe("StorageIntegration methods", () => {
             expect(StorageIntegration.check).toThrow(NotImplementError);
         })
     })
+
+    describe("type method", () => {
+        it("should exist", () => {
+            expect(StorageIntegration.check).toBeDefined();
+        });
+
+        it("should throw an error", () =>{
+            expect(StorageIntegration.check).toThrow(NotImplementError);
+        })
+    })
 });

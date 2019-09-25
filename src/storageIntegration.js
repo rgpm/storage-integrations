@@ -30,6 +30,10 @@ class StorageIntegration {
     check() {
         throw new NotImplementedError("StorageIntegration: check: not implemented");
     }
+
+    type() {
+        throw new NotImplementedError("StorageIntegration: check: not implemented");
+    }
 }
 
 module.exports = StorageIntegration;
