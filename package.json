@@ -29,6 +29,17 @@
           "**/test/*.test.js",
           "**/test/node/*.test.js"
         ]
+      },
+      {
+        "displayName": "Browser Tests",
+        "testMatch": [
+          "**/test/*.test.js",
+          "**/test/browser/*.test.js"
+        ],
+        "preset": "jest-puppeteer",
+        "globals": {
+          "PATH": "http://localhost:4444"
+        }
       }
     ]
   }
