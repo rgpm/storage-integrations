@@ -1,6 +1,6 @@
 module.exports = {
         entry: {
-            'app': ['./src/rgpm.js', './src/cryptoFactory']
+            'app': ['./src/storageFactory.js']
         },
         output: {
             filename: 'bundle.min.js',

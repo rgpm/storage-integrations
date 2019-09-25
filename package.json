@@ -12,5 +12,24 @@
   },
   "dependencies": {
     "jest": "^24.9.0"
+  },
+  "devDependencies": {
+    "express": "^4.17.1",
+    "jest-cli": "^24.9.0",
+    "jest-puppeteer": "^4.3.0",
+    "puppeteer": "^1.20.0",
+    "webpack": "^4.41.0",
+    "webpack-dev-middleware": "^3.7.1"
+  },
+  "jest": {
+    "projects": [
+      {
+        "displayName": "Node Tests",
+        "testMatch": [
+          "**/test/*.test.js",
+          "**/test/node/*.test.js"
+        ]
+      }
+    ]
   }
 }
