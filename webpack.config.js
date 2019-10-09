@@ -1,3 +1,5 @@
+var nodeExternals = require('webpack-node-externals');
+
 module.exports = {
         entry: {
             'app': ['./src/storageFactory.js']
@@ -6,6 +8,7 @@ module.exports = {
             filename: 'bundle.min.js',
             library: 'app'
         },
-        mode: 'production'
+        mode: 'production',
+        externals: [nodeExternals()]
     }
     
