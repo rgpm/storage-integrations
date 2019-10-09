@@ -1,6 +1,6 @@
 {
-  "name": "storage-integrations",
-  "version": "1.0.0",
+  "name": "@rgpm/storage-integrations",
+  "version": "0.1.0",
   "description": "Storage Integrations for RGPM Core",
   "main": "index.js",
   "repository": "git@github.com:rgpm/storage-integrations.git",
@@ -14,8 +14,8 @@
     "node-localstorage": "^1.3.1"
   },
   "devDependencies": {
-    "jest": "^24.9.0",
     "express": "^4.17.1",
+    "jest": "^24.9.0",
     "jest-cli": "^24.9.0",
     "jest-puppeteer": "^4.3.0",
     "puppeteer": "^1.20.0",
@@ -23,7 +23,9 @@
     "webpack-dev-middleware": "^3.7.1",
     "webpack-node-externals": "^1.7.2"
   },
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "jest": {
     "projects": [
       {
