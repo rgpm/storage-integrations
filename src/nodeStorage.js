@@ -4,9 +4,9 @@ const NotImplementedError = require("./notImplementedError");
 const StorageIntegration = require("./storageIntegration");
 
 /**
- * Uses localStorage in browsers to store information
+ * Uses a localStorage module to store information on the server (for node)
  */
-class BrowserStorage extends StorageIntegration {
+class NodeStorage extends StorageIntegration {
     constructor() {
         super();
         const LocalStorage = require('node-localstorage').LocalStorage;
@@ -71,5 +71,5 @@ class BrowserStorage extends StorageIntegration {
     }
 }
 
-module.exports = BrowserStorage;
+module.exports = NodeStorage;
 
