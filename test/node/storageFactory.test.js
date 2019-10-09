@@ -13,8 +13,8 @@ describe("StorageFactory methods", () => {
     describe("getLocalStorage method", () => {
         it("should throw error", () => {
             const StorageFactory = require("../../src/storageFactory");
-            const NotImplementedError = require("../../src/notImplementedError");
-            expect(StorageFactory.getLocalStorage).toThrow(NotImplementedError);
+            const result = StorageFactory.getLocalStorage().type();
+            expect(result).toEqual("nodeStorage");
         });
     });
 });

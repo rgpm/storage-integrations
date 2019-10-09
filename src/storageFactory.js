@@ -12,9 +12,22 @@ class StorageFactory {
                 const BrowserStorage = require("./browserStorage");
                 return new BrowserStorage();
             }
-        } catch (e) { }
+        } catch (e) { 
+            if (!(e instanceof NotImplementedError) && !(e instanceof ReferenceError)) {
+                throw e;
+            }
+        }
 
         /* Node */
+        try {
+            require('crypto');
+            const NodeStorage = require("./nodeStorage");
+            return new NodeStorage();
+        } catch (e) {
+            if (!(e instanceof NotImplementedError)) {
+                throw e;
+            }
+        }
         throw new NotImplementedError("Local Storage for NodeJS not ready");
     }
 }
