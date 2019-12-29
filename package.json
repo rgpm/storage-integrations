@@ -1,6 +1,6 @@
 {
   "name": "@rgpm/storage-integrations",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Storage Integrations for RGPM Core",
   "main": "index.js",
   "repository": "git@github.com:rgpm/storage-integrations.git",
@@ -22,9 +22,6 @@
     "webpack": "^4.41.0",
     "webpack-dev-middleware": "^3.7.1",
     "webpack-node-externals": "^1.7.2"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
   },
   "jest": {
     "projects": [
