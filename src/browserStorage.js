@@ -34,9 +34,9 @@ class BrowserStorage extends StorageIntegration {
     }
 
     /**
-     * Returns the file contents
-     * @param name The name of the file
-     * @returns {String} The file contents
+     * Returns the value from the specified key
+     * @param name The name of key
+     * @returns {String} The value contents
      */
     readFile(name) {
         return this.storage.getItem(name)
